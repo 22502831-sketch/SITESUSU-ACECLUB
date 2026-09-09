@@ -454,3 +454,54 @@ a { text-decoration: none; color: inherit; }
   .chamada-final__titulo { font-size: 1.9rem; }
   .rodape__container { grid-template-columns: 1fr; padding: 60px 20px 40px; }
 }
+
+/* ===== MODO ESCURO ===== */
+
+body.modo-escuro {
+  --cor-creme: #111110;
+  --cor-creme-escuro: #1a1a17;
+  --cor-verde-escuro: #0b120d;
+  --cor-verde-escuro-2: #111b13;
+  --cor-preto: #050505;
+  --cor-texto: #f5f1ea;
+  --cor-texto-suave: #b5b2a8;
+  --cor-borda: #35352f;
+}
+
+/* Elementos que usam cores fixas */
+body.modo-escuro .cabecalho {
+  background: var(--cor-creme);
+  border-color: var(--cor-borda);
+}
+
+body.modo-escuro .botao--contorno {
+  border-color: var(--cor-texto);
+  color: var(--cor-texto);
+}
+
+body.modo-escuro .colecao {
+  background: var(--cor-creme-escuro);
+}
+
+body.modo-escuro .newsletter {
+  background: var(--cor-verde-escuro);
+}
+
+body.modo-escuro .rodape {
+  background: var(--cor-preto);
+}
+.botao-tema {
+  border: 1px solid var(--cor-borda);
+  background: transparent;
+  color: var(--cor-texto);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.2s ease;
+}
+
+.botao-tema:hover {
+  background: var(--cor-creme-escuro);
+}
